@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BFFF"
+    android:padding="50dp"
+    tools:context="com.example.ganghoyong.login_register2.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="F.T.2 App"
+        android:textStyle="bold"
+        android:textSize="60dp"
+        android:textColor="#FFFAFA"
+        android:fontFamily="sans-serif-thin"
+        android:layout_marginBottom="60dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:fontFamily="sans-serif-thin"
+       android:text="Email"
+       android:textColor="#FFFAFA"
+       android:textSize="15dp"
+       android:textStyle="bold"
+       android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:text="Password"
+        android:textColor="#FFFAFA"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bLogin"
+        android:layout_width="match_parent"
+        android:fontFamily="sans-serif-thin"
+        android:text="Login"
+        android:textStyle="bold"
+        android:textColor="#FFFAFA"
+        android:background="#87CEFA"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvRegisterLink"
+        android:layout_width="wrap_content"
+        android:text="Register Here"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="#FFFAFA"
+        android:fontFamily="sans-serif-thin"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
