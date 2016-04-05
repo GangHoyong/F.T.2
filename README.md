@@ -3,7 +3,10 @@
 [![Prject License](https://img.shields.io/crates/l/rustc-serialize.svg)](#License)
 [![Platform](https://img.shields.io/badge/platform-Android-green.svg?style=flat)](https://github.com/GangHoyong/F.T.2)
 [![Platform](https://img.shields.io/badge/platform-Web-green.svg?style=flat)](https://github.com/GangHoyong/F.T.2)
-[![Code Climate](https://img.shields.io/codeclimate/issues/github/me-and/mdf.svg?style=plastic)](https://github.com/GangHoyong/F.T.2/issues)
+[![Language](https://img.shields.io/badge/Language-Java-ligthgrey.svg?style=flat)](#Language)
+[![Language](https://img.shields.io/badge/Language-C++-ligthgrey.svg?style=flat)](#Language)
+
+
 
 # Satatus
 This project is used in production at PPG, android App, web and is being actively developed and maintained. Feel free to contact us on gitter or [@F.T.2 Project](https://github.com/GangHoyong/F.T.2/issues).
