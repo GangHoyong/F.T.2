@@ -12,7 +12,8 @@
 This project is used in production at PPG, android App, web and is being actively developed and maintained. Feel free to contact us on gitter or [@F.T.2 Project](https://github.com/GangHoyong/F.T.2/issues).
 
 ## Development operating environment and Related metters
-F.T.2 Authentication App Version API 17 : above Android 4.2 (Jelly Bean) 
+[![Language](https://img.shields.io/badge/F.T.2 Authentication App Version API 17-above Android 4.2 (Jelly Bean) -ff69b4.svg?style=flat)](#Language)
+
 
 ## Developer
 [@GangHoyong](https://github.com/GangHoyong)
