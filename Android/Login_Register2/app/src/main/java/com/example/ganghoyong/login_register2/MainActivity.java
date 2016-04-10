@@ -1,5 +1,6 @@
 package com.example.ganghoyong.login_register2;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -47,12 +48,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         {
             case R.id.bLogin:
             {
+                String email = etEmail.getText().toString();
+                String password = etPassword.getText().toString();
                 // 로그인 부분
-                User user = new User(null,null); // 값 Null Null
-                userLocalStore.storeUserData(user);
-                userLocalStore.setUserLoggedIn(true);
-                startActivity(new Intent(this, logout.class));
+                User user = new User(email,password); // 값 Null Null
 
+                authenticate(user);
                 break;
             }
             case R.id.tvRegisterLink:
@@ -62,4 +63,38 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }
     }
+    private void authenticate(User user)
+    {
+        ServerRequests serverRequests = new ServerRequests(this);
+        serverRequests.storeUserDataInBackground(user, new GetUserCallback() {
+            @Override
+            public void done(User returnedUser) {
+                if(returnedUser == null)
+                {
+                    showErrorMessage();
+                }
+                else
+                {
+                    logUserIn(returnedUser);
+                }
+            }
+        });
+    }
+
+    private  void showErrorMessage()
+    {
+        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(MainActivity.this);
+        dialogBuilder.setMessage("Incorrect user details");
+        dialogBuilder.setPositiveButton("ok", null);
+        dialogBuilder.show();
+    }
+
+    private  void logUserIn(User returnedUser)
+    {
+        userLocalStore.storeUserData(returnedUser);
+        userLocalStore.setUserLoggedIn(true);
+
+        startActivity(new Intent(this, logout.class));
+    }
+
 }

@@ -44,9 +44,22 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
                 String phoneNumber = etPhoneNumber.getText().toString();
                 String birthDate = etBirthDate.getText().toString();
 
-                User registerData = new User(name, mail, password, phoneNumber, birthDate);
+                User user = new User(name, mail, password, phoneNumber, birthDate);
+
+                registerUser(user);
                 break;
             }
         }
+    }
+
+    private void registerUser(User user)
+    {
+        ServerRequests serverRequests = new ServerRequests(this);
+        serverRequests.storeUserDataInBackground(user, new GetUserCallback() {
+            @Override
+            public void done(User returnedUser) {
+                startActivity(new Intent(Register.this, MainActivity.class));
+            }
+        });
     }
 }

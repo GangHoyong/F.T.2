@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00BFFF"
+    android:background="#b8d3ff"
     android:padding="50dp"
     tools:context="com.example.ganghoyong.login_register2.MainActivity"
     android:orientation="vertical">
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -23,7 +24,8 @@
    <TextView
        android:layout_width="wrap_content"
        android:fontFamily="sans-serif-thin"
-       android:text="Email"
+       android:text="이메일"
+       android:inputType="textEmailAddress"
        android:textColor="#FFFAFA"
        android:textSize="15dp"
        android:textStyle="bold"
@@ -38,7 +40,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:fontFamily="sans-serif-thin"
-        android:text="Password"
+        android:text="비밀번호"
         android:textColor="#FFFAFA"
         android:textSize="15dp"
         android:textStyle="bold"
@@ -55,15 +57,16 @@
         android:id="@+id/bLogin"
         android:layout_width="match_parent"
         android:fontFamily="sans-serif-thin"
-        android:text="Login"
+        android:text="로그인"
         android:textStyle="bold"
         android:textColor="#FFFAFA"
         android:background="#87CEFA"
         android:layout_height="wrap_content" />
+
     <TextView
         android:id="@+id/tvRegisterLink"
         android:layout_width="wrap_content"
-        android:text="Register Here"
+        android:text="회원가입"
         android:layout_marginTop="5dp"
         android:layout_gravity="center"
         android:textStyle="bold"
