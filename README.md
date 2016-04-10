@@ -1,7 +1,7 @@
 # university student for time task management system
 [![Project status](https://img.shields.io/badge/status-active-brightgreen.svg)](#status)
 [![Prject License](https://img.shields.io/crates/l/rustc-serialize.svg)](#License)
-[![Platform](https://img.shields.io/badge/platform-Android-green.svg?style=flat)](https://github.com/GangHoyong/F.T.2)
+[![Platform](https://img.shields.io/badge/platform-Android-green.svg?style=flat)](https://github.com/GangHoyong/F.T.2/tree/master/Android)
 [![Platform](https://img.shields.io/badge/platform-Web-green.svg?style=flat)](https://github.com/GangHoyong/F.T.2)
 [![Language](https://img.shields.io/badge/Language-Java-ligthgrey.svg?style=flat)](#Language)
 [![Language](https://img.shields.io/badge/Language-C++-ligthgrey.svg?style=flat)](#Language)
