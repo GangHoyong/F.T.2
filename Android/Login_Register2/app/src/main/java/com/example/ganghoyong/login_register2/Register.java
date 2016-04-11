@@ -44,8 +44,10 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
                 String phoneNumber = etPhoneNumber.getText().toString();
                 String birthDate = etBirthDate.getText().toString();
 
+                //User user = new User(name, mail, password, phoneNumber, birthDate);
+                // 수정 //
                 User user = new User(name, mail, password, phoneNumber, birthDate);
-
+                ////////
                 registerUser(user);
                 break;
             }

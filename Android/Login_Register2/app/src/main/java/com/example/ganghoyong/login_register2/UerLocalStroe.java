@@ -20,6 +20,7 @@ public class UerLocalStroe {
 
     public void storeUserData(User user)
     {
+        // 예제 에서는 이름 . 나이 , 유저 이름 , 패스워드를 받음 ...
         SharedPreferences.Editor spEditor = userLocalDatabase.edit();
         spEditor.putString("mail", user.mail);
         spEditor.putString("password", user.password);
@@ -30,8 +31,12 @@ public class UerLocalStroe {
     {
         String mail = userLocalDatabase.getString("mail", "");
         String password = userLocalDatabase.getString("password", "");
+        String name = userLocalDatabase.getString("name", "");
+        String phoneNumber = userLocalDatabase.getString("phoneNumber" , "");
+        String birthDate = userLocalDatabase.getString("birthDate" , "" );
 
-        User storeUser = new User(mail,password);
+
+        User storeUser = new User(mail,password,name,phoneNumber,birthDate);
 
         return  storeUser;
 

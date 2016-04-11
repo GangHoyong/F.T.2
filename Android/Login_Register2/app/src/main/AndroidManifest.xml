@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ganghoyong.login_register2">
 
-
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- internet 연결을 위한 ...-->
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
     <application
         android:allowBackup="true"

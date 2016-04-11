@@ -48,12 +48,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         {
             case R.id.bLogin:
             {
+                //로그인 부분
                 String email = etEmail.getText().toString();
                 String password = etPassword.getText().toString();
-                // 로그인 부분
+
                 User user = new User(email,password); // 값 Null Null
 
+                // user Email, password -> authenticate 함수로 전달
                 authenticate(user);
+
+                /*
+                Intent intent2 = new Intent(this,logout.class);
+                startActivity(intent2);
+                */
                 break;
             }
             case R.id.tvRegisterLink:
@@ -71,10 +78,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void done(User returnedUser) {
                 if(returnedUser == null)
                 {
+                    // 아이디랑 비번이 다를경우 ... error Message 함수 호출
                     showErrorMessage();
                 }
                 else
                 {
+                    // 만약 아이디랑 비번이 같은 경우 logUserIn 함수를 호출
                     logUserIn(returnedUser);
                 }
             }
@@ -94,6 +103,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         userLocalStore.storeUserData(returnedUser);
         userLocalStore.setUserLoggedIn(true);
 
+        // 로그인후 다음 엑티비티로 전환 !!
         startActivity(new Intent(this, logout.class));
     }
 

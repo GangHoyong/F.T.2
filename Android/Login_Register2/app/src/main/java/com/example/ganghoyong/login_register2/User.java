@@ -20,7 +20,7 @@ public class User {
     {
         this.mail = mail;
         this.password = password;
-        this.name = "";
+        this.name = name;
         this.phoneNumber = phoneNumber;
         this.birthDate = birthDate;
     }
