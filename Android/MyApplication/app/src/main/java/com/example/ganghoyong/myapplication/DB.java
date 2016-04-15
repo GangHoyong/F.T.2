@@ -10,7 +10,7 @@ public class DB {
 
 
     // URL register
-    public static final String REGISTER_URL = "http://192.168.25.4:8888/register.php";
+    public static final String REGISTER_URL = "";
     // Login and register
     public static final String KEY_NAME = "name";
     // 공통부분
