@@ -7,9 +7,9 @@ public class DB {
 
 
     // URL register
-    public static final String REGISTER_URL = "http://192.168.25.4:8888/register.php";
+    public static final String REGISTER_URL = "";
     // URL Login
-    public static final String LOGIN_URL = "http://192.168.25.4:8888/login.php";
+    public static final String LOGIN_URL = "";
 
     // 응답이 성공적으로 로그인 서비이면 ...
     public static final String LOGIN_SUCCESS = "success";
